@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        /* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and center text in the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add some spacing and styling to the main content sections */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+
+     
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Style the links on hover and when active */
+        nav a:hover {
+            background-color: #555;
+        }
+
+        nav a.active {
+            background-color: #555;
+        }
+
+        .about-me-image {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+    <main>
+        <section id="section2">
+            <h2>About Me</h2>
+            <img class="about-me-image" src="images/person.jpg" alt="Your Name">
+            <p>This is the second section of the website. Here's an image of me:</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>You can contact me at example@email.com</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Simple Website
+    </footer>
+</body>
+</html>

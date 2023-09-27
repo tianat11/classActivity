@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- step 1. Add and h2 that says My Form -->
+    <h2>My Form</h2>
+    <!-- step 2. fill in the missing code -->
+    <!-- when creating a form what element shoudld we place on the line below -->
+<form action="submit.php" method="post">
+    <!-- the for attribute links the label to the input elemnt -->
+    <label for="name">Name:</label>
+    <!-- the type attribute lets us know what TYPE of content will be placed in the input field -->
+    <input type="text" id="name" name="name" required><br><br>
+    <!-- if the label if for the email what should the content say -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <!-- fill in the blanks below with the correct code -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+        <option value="other">other</option>
+    </select><br><br>
+
+    <label for="interests">Interests:</label>
+    <ul>
+        <li><input type="checkbox" id="music" name="interests[]" value="music"><label for="music">Music</label></li>
+        <li><input type="checkbox" id="movies" name="interests[]" value="movies"><label for="movies">Movies</label></li>
+        <li><input type="checkbox" id="sports" name="interests[]" value="sports"><label for="sports">Sports</label></___>
+        <li><input type="checkbox" id="books" name="interests[]" value="books"><label for="books">Books</label></li>
+    </ul><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
